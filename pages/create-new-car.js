@@ -7,7 +7,7 @@ import Header from '../components/header'
 import CreateNewCar from '../components/create-new-car'
 import FooterContent from '../components/footer-content'
 
-const CreateNewCar = (props) => {
+const CreateNewCars = (props) => {
   const translate = useTranslations()
   return (
     <>
@@ -785,7 +785,7 @@ const CreateNewCar = (props) => {
   )
 }
 
-export default CreateNewCar
+export default CreateNewCars
 
 export async function getStaticProps(context) {
   const messages = (await import('/locales/' + context.locale + '.json'))
